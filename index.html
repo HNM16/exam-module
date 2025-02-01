@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="btnAdd">+ NEW</button>
+    </div>
+
+    <div class="form-container">
+        <form class="formSearch">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit">Search</button>
+        </form>
+        <select class="option">
+            <option value="All">All</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+         <select class="option1">
+            <option value="All">All</option>
+            <option value="Dushanbe">Los Angeles</option>
+            <option value="Kulob">Miami</option>
+            <option value="Danqara">New York</option>
+            <option value="Vahdat">Chicago</option>
+        </select>
+    </div>
+
+
+
+    <dialog class="dialogAdd">
+        <form class="formAdd">
+            <input type="text" placeholder="Avatar" name="avatar">
+            <input type="text" placeholder="Name" name="name">
+            <input type="text" placeholder="Age" name="age">
+            <button type="button" class="btnCloseAdd">Close</button>
+            <button type="submit">Save</button>
+        </form>
+    </dialog>
+
+    <dialog class="dialogEdit">
+        <form class="formEdit">
+            <input type="hidden" name="id">
+            <input type="text" placeholder="Avatar" name="avatar">
+            <input type="text" placeholder="Name" name="name">
+            <input type="text" placeholder="Age" name="age">
+            <button type="button" class="btnCloseEdit">Close</button>
+            <button type="submit">Save</button>
+        </form>
+    </dialog>
+
+    <table>
+        <thead>
+            
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+    <dialog class="infoDialog">
+        <div class="box-info">
+            <div class="box-header-info">
+                <p class="close-info">X</p>
+                <h3>User info</h3>
+            </div>
+            <div class="info-box-append">
+
+               
+            </div>
+        </div>
+    </dialog>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
