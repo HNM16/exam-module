@@ -66,17 +66,17 @@ option.onclick = async (element) => {
 option1.onclick = async (element) => {
   let value = option1.value;
   try {
-    if (value == "Miami") {
-      let { data } = await axios.get(`${api}?city=${"Miami"}`);
+    if (value == "Dushanbe") {
+      let { data } = await axios.get(`${api}?city=${"Dushanbe"}`);
       getData(data);
-    } else if (value == "Los Angeles") {
-      let { data } = await axios.get(`${api}?city=${"Los Angeles"}`);
+    } else if (value == "Kulob") {
+      let { data } = await axios.get(`${api}?city=${"Kulob"}`);
       getData(data);
-    } else if (value == "Chicago") {
-      let { data } = await axios.get(`${api}?city=${"Chicago"}`);
+    } else if (value == "Danqara") {
+      let { data } = await axios.get(`${api}?city=${"Danqara"}`);
       getData(data);
-    } else if (value == "New York") {
-      let { data } = await axios.get(`${api}?city=${"New York"}`);
+    } else if (value == "Vahdat") {
+      let { data } = await axios.get(`${api}?city=${"Vahdat"}`);
       getData(data);
     } else if (value == "All") {
       get();
