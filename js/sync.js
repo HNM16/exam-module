@@ -82,7 +82,9 @@ function getData(data) {
     avatar.className = "avatar";
     let name = document.createElement("p");
     name.innerHTML = element.name;
-    
+    let email = document.createElement("p");
+    email.innerHTML = element.email;
+
     let city = document.createElement("td");
     city.innerHTML = element.city;
 
@@ -111,7 +113,9 @@ function getData(data) {
       formEdit["id"] = element.id;
       formEdit["avatar"].value = element.avatar;
       formEdit["name"].value = element.name;
+      formEdit["email"].value = element.email;
       formEdit["age"].value = element.age;
+      formEdit["phone"].value = element.phone;
       showEdit(element);
     };
     let btnInfo = document.createElement("button");
@@ -132,9 +136,11 @@ function getData(data) {
     div1.appendChild(avatar);
     div1.appendChild(div2);
     div2.appendChild(name);
+    div2.appendChild(email);
     tr.appendChild(div1);
     tr.appendChild(city);
     tr.appendChild(status);
+    tr.appendChild(phone);
     tr.appendChild(action);
     tbody.appendChild(tr);
   });
@@ -151,6 +157,7 @@ function InfoGet(data) {
       <div class="box-info-main">
                     <img src="${data.avatar}" alt="">
                     <h2>${data.name}</h2>
+                    <p>${data.email}</p>
                 </div>
                 <div class="box-info-elem">
                     <div>
@@ -161,7 +168,10 @@ function InfoGet(data) {
                         <p>Status</p>
                         <p>${data.status ? "Active" : "Inactive"}</p>
                     </div>
-                   
+                    <div>
+                        <p>Phone</p>
+                        <p>${data.phone}</p>
+                    </div>
                 </div>
                 <div>
                     <button>Edit</button>
